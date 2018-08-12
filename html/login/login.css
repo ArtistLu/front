@@ -1,0 +1,75 @@
+body {
+	display: flex;
+	justify-content: center;
+	font-size: 14px;
+}
+
+input {
+	border:0;
+	padding: 0;
+	border-color: transparent;
+	width: 100%;
+	font-size: 16px;
+	border:0;
+	padding: 0;
+	height: 30px;
+	background: transparent;
+}
+
+.container {
+	padding-top: 100px;
+	/*background: blue;*/
+	height: 100%;
+	width: 70%;
+}
+
+.row-input::after {
+	content: "xxx";
+	height: 10px;
+	background: #333;
+	position: absolute;
+	top:0;
+	bottom: 0;
+}
+
+.row {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.send_code {
+	border-color: transparent;
+	boder:0;
+	padding:0;
+	margin: 0;
+	margin-left: 10px;
+	flex-grow: 2;
+	width: 50%;
+	background: transparent;
+}
+
+.send_code::before {
+	content: "";
+	position: absolute;
+    top: 50%;
+    left: -1px;
+    width: 1px;
+    height: 24px;
+	background: red;
+}
+.submit {
+	width: 100%;
+	height: 36px;
+	border-radius: 5px;
+	line-height: 16px;
+	background: #FFCC00;
+}
+
+.get-code-faild {
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-start;
+}
