@@ -16,6 +16,10 @@ input {
 	background: transparent;
 }
 
+input:focus, button:focus {
+	outline: none;
+}
+
 .container {
 	padding-top: 100px;
 	/*background: blue;*/
@@ -24,12 +28,14 @@ input {
 }
 
 .row-input::after {
-	content: "xxx";
-	height: 10px;
-	background: #333;
-	position: absolute;
-	top:0;
-	bottom: 0;
+	content: "";
+	height: 1px;
+	width: 100%;
+	color: red;
+	background: #e5e5e5;
+	position: relative;
+	bottom: 0px;
+
 }
 
 .row {
@@ -38,27 +44,27 @@ input {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	flex-wrap: wrap;
+}
+.code {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
 }
 
 .send_code {
 	border-color: transparent;
-	boder:0;
-	padding:0;
-	margin: 0;
-	margin-left: 10px;
-	flex-grow: 2;
-	width: 50%;
 	background: transparent;
+	width: 45%;
+	margin-left: 10px;
 }
 
 .send_code::before {
 	content: "";
 	position: absolute;
-    top: 50%;
-    left: -1px;
+    height: 14px;
     width: 1px;
-    height: 24px;
-	background: red;
+	background: #e5e5e5;
 }
 .submit {
 	width: 100%;
